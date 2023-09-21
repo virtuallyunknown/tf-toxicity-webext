@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Tensorflow test",
+    "description": "Tensorflow test",
+    "version": "1.0",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "tensorflow@extension.com"
+        }
+    },
+    "host_permissions": ["*://*.example.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.example.com/*"],
+            "js": ["extension.js"]
+        }
+    ]
+}
